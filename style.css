@@ -1,0 +1,45 @@
+.background {
+    background-color: salmon;
+}
+
+.title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.winnerText {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+.buttonFlex{
+    display: flex;
+    flex: 1 1 auto;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+button{
+    background-color: transparent;
+    border: 1;
+    margin: 20px;
+}
+
+button:hover {
+    height: 300px;
+    width: 300px;
+}
+
+
+.img{
+    align-self: center;
+    height: 250px;
+    width: 250px;
+}
+
+
