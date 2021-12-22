@@ -15,6 +15,20 @@
     font-size: 30px;
 }
 
+
+.scoreBoardFlex {
+    display: flex;
+    margin: 0;
+    justify-content: space-around;
+
+    
+}
+.scoreBoard {
+    border: 5px solid white;
+    font-size: 50px;
+    color: white;
+    margin: 0px;
+}
 .buttonFlex{
     display: flex;
     flex: 1 1 auto;
@@ -24,17 +38,16 @@
 
 }
 
-button{
+.button{
     background-color: transparent;
     border: 1;
     margin: 20px;
 }
 
-button:hover {
+.button:hover {
     height: 300px;
     width: 300px;
 }
-
 
 .img{
     align-self: center;
