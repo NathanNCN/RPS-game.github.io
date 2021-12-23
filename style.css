@@ -19,16 +19,23 @@
 .scoreBoardFlex {
     display: flex;
     margin: 0;
-    justify-content: space-around;
-
-    
+    justify-content: center;   
 }
+
 .scoreBoard {
     border: 5px solid white;
     font-size: 50px;
     color: white;
-    margin: 0px;
+    margin: 0;
+    margin-left: 2em;
+    margin-right: 2em;
 }
+
+.scoreBoardText {
+    margin-left: 5em;
+    margin-right: 4em; 
+}
+
 .buttonFlex{
     display: flex;
     flex: 1 1 auto;
@@ -54,5 +61,6 @@
     height: 250px;
     width: 250px;
 }
+
 
 
