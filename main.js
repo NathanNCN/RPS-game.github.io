@@ -35,6 +35,8 @@ function round(playerSelection, computerSelection){
 }
 
 let buttonR = document.getElementById('rockButton');
-if (buttonR.onclick == true) {
-    round('rock',computerPlay());
-}
+let buttonP = document.getElementById('paperButton');
+let buttonS = document.getElementById('scissorsButton');
+buttonR.addEventListener('click', round('rock',computerPlay()));
+buttonP.addEventListener('click', round('paper',computerPlay()));
+buttonS.addEventListener('click', round('scissors',computerPlay()));
