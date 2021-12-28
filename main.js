@@ -12,6 +12,23 @@ function updatePlayer(){
     scoreBoardPlayer.innerHTML = playerScore;
 }
 
+function restGame(){
+    computerScore = 0;
+    playerScore = 0;
+    scoreBoardPlayer.innerHTML = playerScore;
+    scoreBoardComputer.innerHTML = computerScore;
+
+}
+function isWinner(){
+    if (computerScore === 5){
+        winner.innerHTML = 'I won';
+        restGame();
+    } else if (playerScore === 5){
+        winner.innerHTML = 'You Win';
+        restGame();
+    }
+}
+
 function round(playerSelection, computerSelection){
     if (playerSelection === computerSelection) {
         winner.innerHTML = 'We Draw, we both picked ' + playerSelection;
@@ -29,14 +46,13 @@ function round(playerSelection, computerSelection){
         computerScore += 1;
         scoreBoardComputer.innerHTML = computerScore;
     }
-    
-
-
+    isWinner();
 }
 
 let buttonR = document.getElementById('rockButton');
 let buttonP = document.getElementById('paperButton');
 let buttonS = document.getElementById('scissorsButton');
-buttonR.addEventListener('click', round('rock',computerPlay()));
-buttonP.addEventListener('click', round('paper',computerPlay()));
-buttonS.addEventListener('click', round('scissors',computerPlay()));
+buttonR.addEventListener('click', () => round( 'rock',computerPlay()));
+buttonP.addEventListener('click', () => round('paper',computerPlay()));
+buttonS.addEventListener('click', () => round('scissors',computerPlay()));
+
